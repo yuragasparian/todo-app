@@ -1,0 +1,20 @@
+button {
+    padding: 10px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task-button {
+    background-color: #007BFF;
+}
+
+.complete-button {
+    margin-right: 10px;
+    background-color: #28a745;
+}
+
+.remove-button {
+    background-color: #dc3545;
+}

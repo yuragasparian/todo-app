@@ -1,4 +1,6 @@
-import "../styles/TodoItem.css"
+import Button from "../Button";
+import "../../styles/TodoItem.css"
+
 
 export default function TodoItem ({ task, removeTask, toggleComplete }) {
   return (
@@ -11,12 +13,8 @@ export default function TodoItem ({ task, removeTask, toggleComplete }) {
         {task.text}
       </span>
       <div>
-        <button onClick={toggleComplete} className="complete-button">
-          {task.completed ? "Undo" : "Mark Complete"}
-        </button>
-        <button onClick={removeTask} className="remove-button">
-          Remove
-        </button>
+        <Button onClick={toggleComplete} className="complete-button">{task.completed ? "Undo" : "Mark Complete"}</Button>
+        <Button onClick={removeTask} className="remove-button">Remove</Button>
       </div>
     </li>
   );

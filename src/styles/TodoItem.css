@@ -9,21 +9,3 @@
 }
 
 
-.complete-button {
-    margin-right: 10px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.remove-button {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}

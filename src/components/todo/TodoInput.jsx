@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../styles/TodoInput.css"
+import "../../styles/TodoInput.css"
+import Button from "../Button";
 
 export default function TodoInput({ addTask }) {
   const [input, setInput] = useState("");
@@ -17,9 +18,8 @@ export default function TodoInput({ addTask }) {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button onClick={handleAdd}>
-        Add Task
-      </button>
+      <Button onClick={handleAdd} className={"add-task-button"}>Add Task</Button>
+
     </div>
   );
 };
